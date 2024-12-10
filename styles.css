@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #FF6F61;
+    padding: 20px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.welcome {
+    text-align: center;
+    background-color: #FBE9E7;
+    padding: 80px 0;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    color: #FF6F61;
+}
+
+.welcome p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.welcome .btn {
+    background-color: #FF6F61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about, .services, .reviews, .contact {
+    padding: 60px 0;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 30%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    color: #FF6F61;
+    font-size: 24px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #555;
+}
+
+.reviews .review {
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.reviews h4 {
+    font-weight: bold;
+    color: #FF6F61;
+}
+
+.contact form {
+    display: grid;
+    gap: 20px;
+}
+
+.contact input, .contact textarea {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    background-color: #FF6F61;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #FF6F61;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-addresses {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-addresses div {
+    width: 45%;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+
+    .footer-addresses {
+        flex-direction: column;
+    }
+}
